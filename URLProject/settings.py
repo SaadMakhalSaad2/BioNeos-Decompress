@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-n&wzfy$$p+*0b_!hc+84knc)bj9nleq7&316f21%we9ogr%#!f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'shortnsweet.herokuapp.com', 'sn-s.herokuapp.com/', 'sn-s.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'https://decompres.herokuapp.com/', 'decompres.herokuapp.com/', 'decompres.herokuapp.com']
 
 
 # Application definition
@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
