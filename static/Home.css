@@ -1,0 +1,357 @@
+ .u-section-1 {
+   background-image: url("../static/bg.jpg");
+   background-position: 50% 50%;
+   min-height: 729px;
+   background-color: black;
+ }
+
+ .u-section-1 .u-layout-wrap-1 {
+   width: calc(((100% - 1140px) / 2) + 1140px);
+   margin: 0 auto 0 0;
+ }
+
+ .primary-button {
+   background-color: #ea5f4d;
+   /* Green */
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+ }
+
+ .primary-button:hover {
+   background-color: #ea5f4d;
+   /* Green */
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+ }
+
+ .footer {
+   background-color: black;
+ }
+
+ .u-section-1 .u-image-1 {
+   min-height: 729px;
+   background-image: url("../static/saad.jpg");
+   background-position: 83.77% 50%;
+ }
+
+ .u-section-1 .u-container-layout-1 {
+   padding: 30px 40px;
+ }
+
+ .u-section-1 .u-layout-cell-2 {
+   min-height: 729px;
+ }
+
+ .u-section-1 .u-container-layout-2 {
+   padding: 30px 40px;
+ }
+
+ .u-section-1 .u-text-1 {
+   font-size: 3.75rem;
+   letter-spacing: normal;
+   font-family: Montserrat, sans-serif;
+   text-transform: none;
+   font-weight: 700;
+   margin: 0 14px 0 0;
+ }
+
+ .u-section-1 .u-text-2 {
+   letter-spacing: 1px;
+   font-size: 1rem;
+   text-transform: none;
+   margin: 14px auto 0 0;
+ }
+
+ .u-section-1 .u-btn-1 {
+   padding: 0;
+ }
+
+ .u-section-1 .u-btn-2 {
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-size: 1.125rem;
+   font-weight: 700;
+   text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+   background-image: none;
+   margin: 45px auto 0 0;
+   padding: 19px 52px 21px 51px;
+ }
+
+ @media (max-width: 1199px) {
+   .u-section-1 {
+     min-height: 473px;
+   }
+
+   .u-section-1 .u-layout-wrap-1 {
+     width: calc(((100% - 940px) / 2) + 940px);
+   }
+
+   .u-section-1 .u-image-1 {
+     min-height: 601px;
+   }
+
+   .u-section-1 .u-layout-cell-2 {
+     min-height: 601px;
+   }
+
+   .u-section-1 .u-text-1 {
+     margin-right: 0;
+     font-size: 3rem;
+   }
+
+   .u-section-1 .u-btn-2 {
+     border-style: none;
+     padding-right: 187px;
+     padding-left: 186px;
+   }
+ }
+
+ @media (max-width: 991px) {
+   .u-section-1 {
+     min-height: 332px;
+   }
+
+   .u-section-1 .u-layout-wrap-1 {
+     width: calc(((100% - 720px) / 2) + 720px);
+   }
+
+   .u-section-1 .u-image-1 {
+     min-height: 819px;
+     background-position: 100% 50%;
+     order: 1;
+   }
+
+   .u-section-1 .u-container-layout-1 {
+     padding-left: 30px;
+     padding-right: 30px;
+   }
+
+   .u-section-1 .u-layout-cell-2 {
+     min-height: 100px;
+     order: 0;
+   }
+
+   .u-section-1 .u-container-layout-2 {
+     padding: 50px 30px 50px 60px;
+   }
+
+   .u-section-1 .u-text-1 {
+     font-size: 4.5rem;
+     margin-top: 133px;
+   }
+
+   .u-section-1 .u-btn-2 {
+     padding-right: 271px;
+     padding-left: 271px;
+   }
+ }
+
+ @media (max-width: 767px) {
+   .u-section-1 {
+     min-height: 599px;
+   }
+
+   .u-section-1 .u-layout-wrap-1 {
+     width: calc(((100% - 540px) / 2) + 540px);
+   }
+
+   .u-section-1 .u-image-1 {
+     min-height: 661px;
+   }
+
+   .u-section-1 .u-container-layout-1 {
+     padding-left: 10px;
+     padding-right: 10px;
+   }
+
+   .u-section-1 .u-text-1 {
+     font-size: 3.75rem;
+   }
+
+   .u-section-1 .u-btn-2 {
+     padding-top: 13px;
+     padding-right: 182px;
+     padding-left: 180px;
+   }
+ }
+
+ @media (max-width: 575px) {
+   .u-section-1 {
+     min-height: 367px;
+   }
+
+   .u-section-1 .u-layout-wrap-1 {
+     width: calc(((100% - 340px) / 2) + 340px);
+   }
+
+   .u-section-1 .u-image-1 {
+     min-height: 416px;
+   }
+
+   .u-section-1 .u-layout-cell-2 {
+     min-height: 381px;
+   }
+
+   .u-section-1 .u-container-layout-2 {
+     padding: 30px 10px 30px 50px;
+   }
+
+   .u-section-1 .u-text-1 {
+     font-size: 1.875rem;
+     margin-top: 105px;
+   }
+
+   .u-section-1 .u-btn-2 {
+     padding-left: 81px;
+     padding-right: 81px;
+     padding-bottom: 14px;
+   }
+ }
+
+ .u-section-2 {
+   background-image: none;
+ }
+
+ .u-section-2 .u-sheet-1 {
+   min-height: 652px;
+ }
+
+ .u-section-2 .u-text-1 {
+   width: 697px;
+   margin: 60px auto 0;
+ }
+
+ .u-section-2 .u-text-2 {
+   font-weight: 400;
+   font-style: italic;
+   width: 674px;
+   margin: 20px auto 0;
+ }
+
+ .u-section-2 .u-btn-1 {
+   font-style: italic;
+   padding: 0;
+ }
+
+ .u-section-2 .u-list-1 {
+   margin-top: 38px;
+   margin-bottom: 60px;
+ }
+
+ .u-section-2 .u-repeater-1 {
+   grid-template-columns: repeat(3, calc(33.3333% - 16px));
+   min-height: 304px;
+   grid-gap: 24px;
+ }
+
+ .u-section-2 .u-list-item-1 {
+   background-image: none;
+ }
+
+ .u-section-2 .u-container-layout-1 {
+   padding: 30px;
+ }
+
+ .u-section-2 .u-text-3 {
+   font-weight: 700;
+   margin: 0;
+ }
+
+ .u-section-2 .u-text-4 {
+   font-size: 1.25rem;
+   line-height: 2;
+   margin: 20px 0 0;
+ }
+
+ .u-section-2 .u-container-layout-2 {
+   padding: 30px;
+ }
+
+ .u-section-2 .u-text-5 {
+   font-weight: 700;
+   margin: 0;
+ }
+
+ .u-section-2 .u-text-6 {
+   font-size: 1.25rem;
+   line-height: 2;
+   margin: 20px 0 0;
+ }
+
+ .u-section-2 .u-container-layout-3 {
+   padding: 30px;
+ }
+
+ .u-section-2 .u-text-7 {
+   font-weight: 700;
+   margin: 0;
+ }
+
+ .u-section-2 .u-text-8 {
+   font-size: 1.25rem;
+   line-height: 2;
+   margin: 20px 0 0;
+ }
+
+ @media (max-width: 1199px) {
+   .u-section-2 .u-btn-1 {
+     border-style: none none solid;
+   }
+
+   .u-section-2 .u-repeater-1 {
+     min-height: 251px;
+   }
+ }
+
+ @media (max-width: 991px) {
+   .u-section-2 .u-repeater-1 {
+     grid-template-columns: repeat(2, calc(50% - 12px));
+     min-height: 577px;
+   }
+ }
+
+ @media (max-width: 767px) {
+   .u-section-2 .u-text-1 {
+     width: 540px;
+   }
+
+   .u-section-2 .u-text-2 {
+     width: 540px;
+   }
+
+   .u-section-2 .u-repeater-1 {
+     grid-template-columns: 100%;
+   }
+ }
+
+ @media (max-width: 575px) {
+   .u-section-2 .u-text-1 {
+     width: 340px;
+   }
+
+   .u-section-2 .u-text-2 {
+     width: 340px;
+   }
+ }
+
+ .middle {
+   margin-left: auto;
+   margin-right: auto;
+   width: 100px;
+ }
+
+ .center {
+   display: block;
+   margin: auto;
+   padding: 10px;
+ }
