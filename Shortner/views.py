@@ -7,8 +7,8 @@ from . forms import CompressForm
 
 """
 this function is to perform the compressing logic
-it is done first by separating letters from numbers into different strings
-then looping through them and repeating letters with their corresponding numbers
+which is done first by separating letters from numbers into two different strings
+then looping through them and repeating letters with their corresponding number
 """
 def decompress(message):
     integers = "1234567890"
@@ -29,30 +29,28 @@ def decompress(message):
     return decoded_message
 
 
-#main endpoint for displaying the form
+#main endpoint for displaying the form 
 def get_form(request):
     #getting message records from the database
-    list = []
+    messages_list = []
     data = MessageData.objects.all()
     for d in data:
-        list.append(d)
-    print(list)
-    list.reverse()
+        messages_list.append(d)
+    messages_list.reverse()
 
     if request.method == 'POST':
         form = CompressForm(request.POST)
         if form.is_valid():
-            text = form.cleaned_data['message']
-
-            msg = MessageData()
+            text = form.cleaned_data['message'] #getting the user input
+            msg = MessageData() #instantiating the message database model
             msg.message = text
             msg.decoded = decompress(text)
-            if msg.decoded:
+            if msg.decoded: #to make sure the message has been decoded successfully from correct input
                 msg.save()
-            else:
+            else: #displayed when the input is not in the proper format
                 messages.success(request, '{}'.format('Invalid input'))
 
             return HttpResponseRedirect("/")
 
     form = CompressForm()
-    return render(request, 'myform/form.html', {'form': form, 'things': list})
+    return render(request, 'myform/form.html', {'form': form, 'things': messages_list})
