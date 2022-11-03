@@ -5,31 +5,33 @@ from django.http import HttpResponseRedirect
 from . models import MessageData
 from . forms import CompressForm
 
-# Declare Key Varaibles
-BASE_LIST = '0123456789abcdefghijklmnopqrstuvwxyz./:'
-BASE_DICT = dict((c, idx) for idx, c in enumerate(BASE_LIST))
-# service_url = 'https://shortnsweet.herokuapp.com'
-service_url = '127.0.0.1'
-
-
-def decompress(str1):
-    ints = "1234567890"
-    num = ""
+"""
+this function is to perform the compressing logic
+it is done first by separating letters from numbers into different strings
+then looping through them and repeating letters with their corresponding numbers
+"""
+def decompress(message):
+    integers = "1234567890"
+    numbers = ""
     letters = ""
-    result_string = ""
+    decoded_message = ""
     i = 0
-    while i < len(str1):
-        if str1[i] in ints:
-            num += str1[i]
+    #separating numbers from letters into two strings, numbers and letters
+    while i < len(message):
+        if message[i] in integers: 
+            numbers += message[i]     
         else:
-            letters += str1[i]
+            letters += message[i]
         i += 1
-    for i, char in enumerate(num):
-        result_string += int(char) * letters[i]
-    return result_string
+    #repeat each letter with its coressponding number 
+    for i, letter in enumerate(numbers):
+        decoded_message += int(letter) * letters[i]
+    return decoded_message
 
 
+#main endpoint for displaying the form
 def get_form(request):
+    #getting message records from the database
     list = []
     data = MessageData.objects.all()
     for d in data:
